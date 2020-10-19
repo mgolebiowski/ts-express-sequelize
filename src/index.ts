@@ -9,7 +9,7 @@ async function main() {
         await sequelize.authenticate();
         initServer(sequelize);
     } catch (error) {
-        console.error('Unable to connect to the database:', error);
+        console.error(error);
     }
 }
 
